@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track My Repair — FixNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">Fix<span>Now</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="track.html" class="active">Track Repair</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <a href="book.html" class="btn btn-primary nav-cta">Book Repair</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="book.html">Book</a>
+    <a href="track.html">Track Repair</a>
+    <a href="pricing.html">Pricing</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="section-eye">Live Updates</p>
+      <h1>Track Your Repair</h1>
+      <p>Enter your Booking ID or mobile number to see the live status of your repair.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Search Bar -->
+      <div class="track-search-box">
+        <input type="text" id="trackInput" placeholder="Booking ID (e.g. FN-20250601-8374) or Mobile Number" />
+        <button class="btn btn-primary" onclick="loadDemo()">Track →</button>
+      </div>
+      <p class="track-demo-hint">Try demo: type anything and press Track to see a sample repair status</p>
+
+      <!-- Result Panel (hidden until search) -->
+      <div id="trackResult" class="track-result" style="display:none;">
+
+        <!-- Header -->
+        <div class="track-header">
+          <div>
+            <p class="section-eye" style="margin-bottom:.25rem;">Booking ID: <strong id="tr-id"></strong></p>
+            <h2 id="tr-device"></h2>
+            <p id="tr-problem" style="color:#aaa;"></p>
+          </div>
+          <div class="track-status-badge" id="tr-badge"></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="track-section">
+          <h3 class="track-section-title">Repair Timeline</h3>
+          <div class="timeline" id="timeline">
+            <!-- injected by JS -->
+          </div>
+        </div>
+
+        <!-- Technician Info -->
+        <div class="track-section">
+          <h3 class="track-section-title">Your Technician</h3>
+          <div class="tech-card">
+            <div class="tech-avatar">RK</div>
+            <div>
+              <strong>Rahul Kumar</strong>
+              <p style="color:#aaa;font-size:.9rem;">Certified Mobile &amp; Laptop Technician · 6 yrs experience · ★ 4.8</p>
+            </div>
+            <a href="tel:+919800000000" class="btn btn-ghost" style="margin-left:auto;">📞 Call</a>
+          </div>
+        </div>
+
+        <!-- Diagnosis & Problem Found -->
+        <div class="track-section">
+          <h3 class="track-section-title">What the Technician Found</h3>
+          <div class="diagnosis-box">
+            <div class="diag-row">
+              <span class="diag-label">Root Cause</span>
+              <span>The LCD display panel has shattered internally. The digitizer layer (touch sensor) is also damaged — typical of a high-impact corner drop.</span>
+            </div>
+            <div class="diag-row">
+              <span class="diag-label">Component</span>
+              <span>LCD + Digitizer Assembly (OLED)</span>
+            </div>
+            <div class="diag-row">
+              <span class="diag-label">Severity</span>
+              <span class="badge badge-warn">Moderate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parts Used -->
+        <div class="track-section">
+          <h3 class="track-section-title">Parts Used / Replaced</h3>
+          <div class="parts-table-wrap">
+            <table class="parts-table">
+              <thead>
+                <tr>
+                  <th>Part Name</th>
+                  <th>Grade</th>
+                  <th>Brand</th>
+                  <th>Unit Cost</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>OLED Display + Digitizer</td>
+                  <td><span class="badge badge-green">OEM</span></td>
+                  <td>Samsung</td>
+                  <td>₹2,199</td>
+                  <td>1</td>
+                  <td>₹2,199</td>
+                </tr>
+                <tr>
+                  <td>Screen Adhesive Strip</td>
+                  <td><span class="badge badge-blue">Compatible</span></td>
+                  <td>Generic</td>
+                  <td>₹50</td>
+                  <td>1</td>
+                  <td>₹50</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5"><strong>Parts Total</strong></td>
+                  <td><strong>₹2,249</strong></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <!-- Cost Breakdown -->
+        <div class="track-section">
+          <h3 class="track-section-title">Cost Breakdown</h3>
+          <div class="cost-box">
+            <div class="cost-row"><span>Parts Cost</span><span>₹2,249</span></div>
+            <div class="cost-row"><span>Labour / Service Fee</span><span>₹299</span></div>
+            <div class="cost-row"><span>Visit Charge</span><span class="green">₹0</span></div>
+            <div class="cost-row cost-total"><span>Estimated Total</span><span>₹2,548</span></div>
+            <p class="cost-note">Final amount confirmed before repair begins. Pay only after you inspect and approve.</p>
+          </div>
+        </div>
+
+        <!-- Time Estimate -->
+        <div class="track-section">
+          <h3 class="track-section-title">Time Estimate</h3>
+          <div class="time-estimate-box">
+            <div class="time-bar-wrap">
+              <div class="time-bar" id="timeBar"></div>
+            </div>
+            <div class="time-labels">
+              <span>Started: 3:10 PM</span>
+              <span id="timePercLabel">65% done</span>
+              <span>Est. done: 4:00 PM</span>
+            </div>
+            <p class="time-note">Estimated repair duration: <strong>50 minutes</strong> · Remaining: ~18 minutes</p>
+          </div>
+        </div>
+
+        <!-- Repair Report (if completed) -->
+        <div class="track-section" id="repairReportSection" style="display:none;">
+          <h3 class="track-section-title">Repair Report</h3>
+          <div class="report-box">
+            <p>Your full repair report is ready. It includes before/after photos, parts replaced, warranty certificate, and technician notes.</p>
+            <a href="#" class="btn btn-primary">📄 Download Report PDF</a>
+          </div>
+        </div>
+
+      </div><!-- /trackResult -->
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">© 2025 FixNow. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script src="assets/track.js"></script>
+</body>
+</html>

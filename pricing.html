@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — FixNow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="logo">Fix<span>Now</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="track.html">Track Repair</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+    </ul>
+    <a href="book.html" class="btn btn-primary nav-cta">Book Repair</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="book.html">Book</a>
+    <a href="track.html">Track Repair</a>
+    <a href="pricing.html">Pricing</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="section-eye">Transparent Pricing</p>
+      <h1>Fair prices. No surprises.</h1>
+      <p>Common repair costs listed below. Exact price confirmed after on-site diagnosis — you approve before we begin.</p>
+    </div>
+  </div>
+
+  <!-- Filter Tabs -->
+  <section class="section">
+    <div class="container">
+      <div class="price-tabs" id="priceTabs">
+        <button class="price-tab active" data-cat="smartphone">📱 Smartphones</button>
+        <button class="price-tab" data-cat="laptop">💻 Laptops</button>
+        <button class="price-tab" data-cat="tablet">📟 Tablets</button>
+        <button class="price-tab" data-cat="smartwatch">⌚ Smartwatches</button>
+      </div>
+
+      <!-- Smartphone Prices -->
+      <div class="price-category active" id="cat-smartphone">
+        <div class="price-grid">
+          <div class="price-card">
+            <div class="price-icon">🖥️</div>
+            <div class="price-info">
+              <h4>Screen Replacement</h4>
+              <p>Original OLED / LCD screen replaced. Includes adhesive and calibration.</p>
+            </div>
+            <div class="price-range">₹999 – ₹4,999</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">🔋</div>
+            <div class="price-info">
+              <h4>Battery Replacement</h4>
+              <p>Original capacity battery. Health verified after install.</p>
+            </div>
+            <div class="price-range">₹399 – ₹899</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">🔌</div>
+            <div class="price-info">
+              <h4>Charging Port Repair</h4>
+              <p>Port cleaned or replaced. Charges tested post-fix.</p>
+            </div>
+            <div class="price-range">₹299 – ₹699</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">💧</div>
+            <div class="price-info">
+              <h4>Water Damage Treatment</h4>
+              <p>Board cleaning, corrosion removal. Success rate depends on severity.</p>
+            </div>
+            <div class="price-range">₹499 – ₹1,499</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">📷</div>
+            <div class="price-info">
+              <h4>Camera Repair</h4>
+              <p>Front/rear camera lens or module replaced.</p>
+            </div>
+            <div class="price-range">₹499 – ₹2,499</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">🔈</div>
+            <div class="price-info">
+              <h4>Speaker / Mic Repair</h4>
+              <p>Speaker or microphone module replaced or cleaned.</p>
+            </div>
+            <div class="price-range">₹299 – ₹799</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">🏠</div>
+            <div class="price-info">
+              <h4>Back Panel / Frame</h4>
+              <p>Cracked back glass or chassis repair.</p>
+            </div>
+            <div class="price-range">₹299 – ₹1,999</div>
+          </div>
+          <div class="price-card">
+            <div class="price-icon">💾</div>
+            <div class="price-info">
+              <h4>Software / Flashing</h4>
+              <p>OS reinstall, bootloop fix, data backup before flashing.</p>
+            </div>
+            <div class="price-range">₹299 – ₹599</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Prices -->
+      <div class="price-category" id="cat-laptop">
+        <div class="price-grid">
+          <div class="price-card"><div class="price-icon">🖥️</div><div class="price-info"><h4>Screen Replacement</h4><p>HD/FHD laptop screen replaced.</p></div><div class="price-range">₹2,999 – ₹8,999</div></div>
+          <div class="price-card"><div class="price-icon">🔋</div><div class="price-info"><h4>Battery Replacement</h4><p>Compatible battery with 1-yr warranty.</p></div><div class="price-range">₹999 – ₹3,499</div></div>
+          <div class="price-card"><div class="price-icon">🌡️</div><div class="price-info"><h4>Overheating / Cooling</h4><p>Fan cleaning, thermal paste replacement, heatsink servicing.</p></div><div class="price-range">₹499 – ₹1,499</div></div>
+          <div class="price-card"><div class="price-icon">⌨️</div><div class="price-info"><h4>Keyboard Repair</h4><p>Key replacement or full keyboard swap.</p></div><div class="price-range">₹799 – ₹3,999</div></div>
+          <div class="price-card"><div class="price-icon">🔌</div><div class="price-info"><h4>Charging Port / DC Jack</h4><p>Port soldering or board-level repair.</p></div><div class="price-range">₹499 – ₹1,999</div></div>
+          <div class="price-card"><div class="price-icon">💾</div><div class="price-info"><h4>OS Install / Virus Removal</h4><p>Windows/Linux reinstall or malware cleanup.</p></div><div class="price-range">₹399 – ₹799</div></div>
+          <div class="price-card"><div class="price-icon">🧠</div><div class="price-info"><h4>RAM / SSD Upgrade</h4><p>Upgrade RAM or storage for faster performance.</p></div><div class="price-range">₹1,499 – ₹7,999</div></div>
+          <div class="price-card"><div class="price-icon">💧</div><div class="price-info"><h4>Water Damage Cleaning</h4><p>Board-level cleaning and component testing.</p></div><div class="price-range">₹999 – ₹2,999</div></div>
+        </div>
+      </div>
+
+      <!-- Tablet Prices -->
+      <div class="price-category" id="cat-tablet">
+        <div class="price-grid">
+          <div class="price-card"><div class="price-icon">🖥️</div><div class="price-info"><h4>Screen Replacement</h4><p>Display + digitizer assembly replaced.</p></div><div class="price-range">₹1,999 – ₹6,999</div></div>
+          <div class="price-card"><div class="price-icon">🔋</div><div class="price-info"><h4>Battery Replacement</h4><p>New battery with health report post-install.</p></div><div class="price-range">₹699 – ₹2,499</div></div>
+          <div class="price-card"><div class="price-icon">🔌</div><div class="price-info"><h4>Charging Port</h4><p>USB-C or Lightning port repair.</p></div><div class="price-range">₹399 – ₹999</div></div>
+          <div class="price-card"><div class="price-icon">📷</div><div class="price-info"><h4>Camera Repair</h4><p>Front/rear camera module replaced.</p></div><div class="price-range">₹699 – ₹2,999</div></div>
+        </div>
+      </div>
+
+      <!-- Smartwatch Prices -->
+      <div class="price-category" id="cat-smartwatch">
+        <div class="price-grid">
+          <div class="price-card"><div class="price-icon">🖥️</div><div class="price-info"><h4>Screen Replacement</h4><p>Display + crown realignment.</p></div><div class="price-range">₹999 – ₹3,999</div></div>
+          <div class="price-card"><div class="price-icon">🔋</div><div class="price-info"><h4>Battery Replacement</h4><p>Micro battery replaced with OEM cell.</p></div><div class="price-range">₹499 – ₹1,499</div></div>
+          <div class="price-card"><div class="price-icon">🏠</div><div class="price-info"><h4>Band / Strap Repair</h4><p>Connector or strap fixed or replaced.</p></div><div class="price-range">₹199 – ₹699</div></div>
+          <div class="price-card"><div class="price-icon">💧</div><div class="price-info"><h4>Water Damage</h4><p>Cleaning and sealing. Water resistance tested.</p></div><div class="price-range">₹599 – ₹1,999</div></div>
+        </div>
+      </div>
+
+      <div class="price-disclaimer">
+        <p>💡 All prices include a <strong>30-day warranty</strong> on parts and labour. Visit is <strong>free</strong>. Final cost is confirmed on-site before work begins — you never pay more than what's approved.</p>
+        <a href="book.html" class="btn btn-primary" style="margin-top:1.25rem;">Book a Repair</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <p class="section-eye">Questions</p>
+      <h2 class="section-title">Frequently asked</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Do I pay before or after the repair? <span>+</span></button>
+          <div class="faq-a">You pay only after the repair is complete and you've inspected and approved it. We never charge upfront.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What if the repair can't be done on-site? <span>+</span></button>
+          <div class="faq-a">In rare cases (e.g., board-level soldering), we may need to take the device to our workshop. We'll tell you upfront and give you a timeline. Device collection and return is free.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Are the spare parts original? <span>+</span></button>
+          <div class="faq-a">We use OEM (Original Equipment Manufacturer) parts wherever possible. If we use a compatible part, we'll tell you the grade and price difference before installation. You can choose.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">What is covered under the 30-day warranty? <span>+</span></button>
+          <div class="faq-a">The part installed and the labour work is covered. If the same problem reoccurs within 30 days due to the repair itself, we fix it for free. Physical damage after the repair is not covered.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How quickly can a technician come? <span>+</span></button>
+          <div class="faq-a">In most cities, same-day or next-day slots are available. You can book a slot as early as 9 AM or as late as 8 PM.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Get an instant estimate</h2>
+      <p>Book now — diagnosis is free, payment is after repair.</p>
+      <a href="book.html" class="btn btn-white btn-lg">Book a Repair</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">© 2025 FixNow. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script src="assets/pricing.js"></script>
+</body>
+</html>
