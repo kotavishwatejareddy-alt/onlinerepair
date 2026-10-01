@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const b=document.getElementById("hamburger"),m=document.getElementById("mobileMenu");if(b&&m){b.onclick=()=>m.classList.toggle("open");m.querySelectorAll("a").forEach(a=>a.onclick=()=>m.classList.remove("open"))}});
