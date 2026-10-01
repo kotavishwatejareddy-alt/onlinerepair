@@ -1,0 +1,1 @@
+function loadDemo(){const r=document.getElementById("trackResult");if(!r)return;const id=document.getElementById("trackInput")?.value||localStorage.getItem("fixnow_booking_id")||"FN-20250601-8374";const x=document.getElementById("tr-id");if(x)x.textContent=id;r.style.display="block";r.scrollIntoView({behavior:"smooth"})}
